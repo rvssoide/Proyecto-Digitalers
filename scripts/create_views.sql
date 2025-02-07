@@ -63,7 +63,7 @@ FROM Production.WorkOrder pwo
 JOIN Production.Product pp
 ON pwo.ProductID=pp.ProductID
 JOIN Production.Location pl
-ON pl.LocationID=pl.LocationID --Ac· no estoy seguro con quÈ unirlo, puede ser que no debamos contemplar esta tabla al final? Otra opciÛn es incluir una tabla intermedia como Production.ProductInventory, que sÌ tiene una relaciÛn lÛgica con esta tabla
+ON pl.LocationID=pl.LocationID --Ac√° no estoy seguro con qu√© unirlo, puede ser que no debamos contemplar esta tabla al final? Otra opci√≥n es incluir una tabla intermedia como Production.ProductInventory, que s√≠ tiene una relaci√≥n l√≥gica con esta tabla
 JOIN Production.ProductModel ppm
 ON ppm.ProductModelID=pp.ProductModelID;
 
